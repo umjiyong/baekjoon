@@ -18,11 +18,6 @@ public class Main {
             st = new StringTokenizer(br.readLine());
             bw.write("Case #"+(i+1)+": "+Integer.toString(Integer.parseInt(st.nextToken())+Integer.parseInt(st.nextToken()))+"\n");
         }
-
-
-
-
-
         bw.flush();
     }
 }

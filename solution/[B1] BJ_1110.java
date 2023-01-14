@@ -23,8 +23,6 @@ public class Main {
             t=t%10*10+temp%10;
         }while (N!=t);
 
-
-
            System.out.println(answer);
     }
 }

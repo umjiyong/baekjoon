@@ -21,10 +21,6 @@ public class Main {
             bw.write("Case #"+(i+1)+": "+a+" + "+b+" = "+(a+b)+"\n");
         }
 
-
-
-
-
         bw.flush();
     }
 }

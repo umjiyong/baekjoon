@@ -20,7 +20,6 @@ public class Main {
             int b=Integer.parseInt(st.nextToken());
             bw.write("Case #"+(i+1)+": "+a+" + "+b+" = "+(a+b)+"\n");
         }
-
         bw.flush();
     }
 }

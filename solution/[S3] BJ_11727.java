@@ -12,6 +12,11 @@ public class Main {
         N = Integer.parseInt(br.readLine());
 
         int ans[] = new int[N];
+        
+        if (N == 1) {
+        System.out.println(1);
+            return;
+        }
 
         ans[0] = 1;
         ans[1] = 3;

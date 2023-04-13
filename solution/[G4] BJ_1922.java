@@ -89,6 +89,5 @@ public class Main {
         if(rx == ry) return true;
         return false;
     }
-
 }
 

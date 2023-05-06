@@ -3,16 +3,14 @@ import java.util.*;
 
 public class Main {
 
-    static int T;
-    //노드 수
-    static int N;
+    static int N,T;
     static int targetA, targetB;
     static ArrayList<Integer> parentList;
     static HashMap<Integer, Integer> nodes;
     static ArrayList<Integer> answerList = new ArrayList<>();
 
     public static void main(String[] args) throws IOException{
-        BufferedReader br = new java.io.BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st;
 
         T = Integer.parseInt(br.readLine());
@@ -39,16 +37,12 @@ public class Main {
                     nodes.replace(child, -1, parent);
                 }
             }
-
-            //구해야 할 애들
             st = new StringTokenizer(br.readLine());
             targetA = Integer.parseInt(st.nextToken());
             targetB = Integer.parseInt(st.nextToken());
             GetParent(targetA);
             CompareParent(targetB);
         }
-
-        //정답 출력
         for(int s : answerList) {
             System.out.println(s);
         }

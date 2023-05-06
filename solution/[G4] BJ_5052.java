@@ -23,7 +23,6 @@ public class Main {
                     tri.insert(tempNum);
                 }
             }
-
             
             if (checking) {
                 bw.write("NO" + "\n");

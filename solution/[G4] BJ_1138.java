@@ -9,9 +9,11 @@ public class Main {
 		int M = sc.nextInt();
 		System.out.println(M - GCD(N, M));
 	}
-    
+	
     	public static int GCD(int a, int b) {
-		if(b == 0)	return a;
+		if(b == 0)	{
+			return a;
+		}
 		return GCD(b, a%b);
 	}
 }

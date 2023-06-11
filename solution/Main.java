@@ -1,13 +1,25 @@
 import java.io.*;
-import java.util.*;
 
 public class Main {
-    static int N, M, X;
+	
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		long s = Long.parseLong(br.readLine());	
+		long sum = 0;							
+		int i = 0;								
+		
+		while(sum < s) {						
+			i++;
+			sum += i;
+		}
+		
+		if(sum > s) {						
+			i--;								
+		}
+		
+		System.out.print(i);
 
-    public static void main(String[] args) throws IOException {
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-
-    }
+	}
+	
 }

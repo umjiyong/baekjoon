@@ -83,7 +83,6 @@ public class p3055 {
 				}
 			}
 		}
-
 		for(int i = 0 ; i < r; i++)
 			for(int j = 0; j < c; j++)
 				map[i][j] = temp[i][j];
